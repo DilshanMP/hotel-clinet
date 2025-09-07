@@ -1,14 +1,16 @@
 import { Component } from '@angular/core';
-import {MatTab, MatTabGroup} from '@angular/material/tabs';
+import { MatTabsModule } from '@angular/material/tabs';
 import { MatIconModule } from '@angular/material/icon';
+import {StaysContextComponent} from '../stays-context-component/stays-context-component';
 
 
 @Component({
   selector: 'app-options',
   imports: [
-    MatTabGroup,
-    MatTab,
-    MatIconModule
+    MatTabsModule,
+    MatIconModule,
+    StaysContextComponent
+
   ],
   standalone: true,
   templateUrl: './options.html',

@@ -1,0 +1,166 @@
+.inner{
+  padding: 5px;
+  height: auto;
+  min-height: 50px;
+  background-color: var(--orange-color);
+  display: flex;
+}
+.destination{
+  width: 35%;
+  height: 40px;
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  background-color: var(--light-color);
+  padding: 5px ;
+  border-radius: 3px;
+
+  mat-icon{
+    color: var(--gray-color);
+  }
+}
+.search{
+  flex:1;
+  height: 100%;
+  border: none;
+}
+.search:focus{
+  outline: none;
+}
+.dates{
+  width: 25%;
+  height: 40px;
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  background-color: var(--light-color);
+  padding: 5px ;
+  border-radius: 3px;
+
+  mat-icon{
+    color: var(--gray-color);
+  }
+}
+.separator{
+  width: 5px;
+}
+.visitors{
+  width: 25%;
+  height: 40px;
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  background-color: var(--light-color);
+  padding: 5px ;
+  border-radius: 3px;
+  justify-content: space-between;
+  cursor: pointer;
+
+  mat-icon{
+    color: var(--gray-color);
+  }
+}
+.search-button{
+  width: 15%;
+  height: 40px;
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  background-color: var(--light-color);
+
+  border-radius: 3px;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.search-btn{
+  flex: 1;
+  background-color: var(--background-color);
+  color: var(--light-color);
+  height: 100%;
+  border: none;
+  border-radius: 5px;
+
+}
+.visitor-widget{
+  width: 250px;
+  height: 180px;
+  flex-direction: column;
+
+
+
+}
+.widget{
+  height: 30px;
+  border: 1px solid var(--gray-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  padding: 5px;
+}
+.raw-element{
+  display: flex;
+  height: 40px;
+  align-items: center;
+  padding: 5px;
+}
+.left-side{
+  margin-right: 50px;
+}
+.tool-btn{
+  border: none;
+  background: none;
+  color: var(--background-color);
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+
+
+}
+.tool-btn:hover{
+  background-color: rgba(6,81,221,0.2);
+}
+.right-side{
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.done{
+  flex: 1;
+  background-color: var(--background-color);
+  color: var(--light-color);
+  height: 35%;
+  border: none;
+  width: 100%;
+  border-radius: 5px;
+}
+@media only screen and (max-width: 1200px) {
+  .destination{
+    width: 30%;
+  }
+  .visitors{
+    width: 30%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .destination{
+    width: 100%;
+  }
+  .dates{
+    width: 100%;
+  }
+  .visitors{
+    width: 100%;
+  }
+  .search-button{
+    width: 100%;
+  }
+  .inner{
+    flex-direction: column;
+  }
+  .separator{
+    height: 5px;
+  }
+
+}
+
