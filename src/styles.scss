@@ -37,10 +37,20 @@ body {
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+@import url(https://fonts.bunny.net/css?family=space-grotesk:300,400,500,600,700);
+@import url(https://fonts.bunny.net/css?family=pacifico:400);
 
 :root{
   --background-color:#3742fa ;
   --light-color:#fff ;
   --gray-color: #6e6e6e;
   --orange-color: #ff6348;
+  --lemon-zest: #d7f20c;
+  --lilac-dream: #d285f2;
+  --off-white: #ebf2f0;
+  --lavender-mist: #4e54bf;
+  --crimson-red: #a60311;
+  --midnight-plum: #231928;
 }
+
+

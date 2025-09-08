@@ -3,6 +3,9 @@
   min-height: 50px;
   background-color: var(--background-color);
 }
+.tool-outer{
+  display: flex;
+}
 .inner-wrapper{
   padding: 10px 0px;
   display: flex;

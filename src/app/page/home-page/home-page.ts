@@ -1,14 +1,15 @@
 import { Component } from '@angular/core';
-import {MainHeader} from './inner-items/main-header/main-header';
+import {MainHeader} from '../../components/main-header/main-header';
 import {Options} from './inner-items/options/options';
 import {OffersComponent} from './inner-items/offers-component/offers-component';
+import {HomeTrendingDestinataion} from './inner-items/home-trending-destination/home-trending-destinataion';
 
 @Component({
   selector: 'app-home-page',
   imports: [
-    MainHeader,
     Options,
-    OffersComponent
+    OffersComponent,
+    HomeTrendingDestinataion
   ],
   standalone: true,
   templateUrl: './home-page.html',
