@@ -1,0 +1,46 @@
+<div class="outer">
+<div class="left">
+  <div class="image">
+    <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="hotel">
+  </div>
+
+</div>
+<div class="middle">
+  <div class="header">
+    <h3>Vendor Sky Resort</h3>
+    <div class="stars" matTooltip="Info about the action"
+         [matTooltipPosition]="position.value!"
+         matTooltipHideDelay="100000">
+      <mat-icon class="star">star</mat-icon>
+      <mat-icon class="star">star</mat-icon>
+      <mat-icon class="star">star</mat-icon>
+    </div>
+    <mat-icon class="thumb_up">thumb_up</mat-icon>
+
+  </div>
+  <div class="location">
+    <a href="">city center, kandy</a>
+    |
+    <a style="color: #4338ca; text-decoration: underline; cursor: pointer"(click)="openModel()">show on map</a>
+    |
+    <span>
+      450 m from downtown
+    </span>
+  </div>
+  <p style="margin-top: 10px">Nestled in the heart of Sri Lanka’s hill country, this Kandy hotel offers modern comfort with breathtaking views of lush mountains and the serene Kandy Lake. Guests can enjoy easy access to the Temple of the Tooth, cultural sites, and vibrant local markets, making it the perfect blend of relaxation and heritage</p>
+</div>
+<div class="right">
+  <div class="review-wrapper">
+    <div class="review-left">
+      <span>Review Score</span>
+      <span style="font-size: 10px">265 Reviews</span>
+    </div>
+    <div class="review-right">
+      <div class="review-number">
+        5.7
+      </div>
+    </div>
+  </div>
+  <button class="col-12" matButton="filled">Show Price</button>
+</div>
+</div>

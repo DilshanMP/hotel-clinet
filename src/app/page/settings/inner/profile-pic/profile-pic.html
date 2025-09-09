@@ -1,0 +1,40 @@
+<div class="upload-container">
+  <h2 class="upload-title">Profile Avatar</h2>
+  <p class="upload-subtitle">Upload a profile picture to personalize your account</p>
+
+  <div class="avatar-upload">
+    <div class="avatar-preview" id="avatarPreview">
+      <div class="avatar-placeholder">👤</div>
+      <div class="upload-overlay" onclick="document.getElementById('avatarInput').click()">
+        <svg viewBox="0 0 24 24">
+          <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
+        </svg>
+      </div>
+    </div>
+
+    <input type="file" id="avatarInput" class="upload-input" accept="image/*">
+
+    <button class="upload-button" onclick="document.getElementById('avatarInput').click()">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
+      </svg>
+      Choose Image
+    </button>
+
+    <button class="remove-button" id="removeButton" onclick="removeAvatar()">
+      Remove Image
+    </button>
+  </div>
+
+  <div class="drag-drop-zone" id="dropZone">
+    <div class="drag-drop-text">Drop your image here</div>
+    <div class="drag-drop-hint">or click "Choose Image" above</div>
+  </div>
+
+  <div class="upload-info">
+    <div class="upload-requirements">
+      Recommended: Square image, at least 256×256px<br>
+      Max file size: 5MB • Formats: JPG, PNG, GIF
+    </div>
+  </div>
+</div>
